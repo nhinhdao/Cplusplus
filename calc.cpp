@@ -2,9 +2,6 @@
 CSCI 13500
 Project 1B
 Calculator program
-Calculator program
-Calculator program
-Calculator program
 Date: 02/28/2018 */
 
 
@@ -18,7 +15,7 @@ int main() {
 	cin >> sum;
 	while (cin >> operators >> numbers){
 		//while (cin >> operators >> numbers){
-			//cin.get(operators);
+		//cin.get(operators);
 		if (operators == '+'){
 			sum += numbers;
 			//cin.ignore(operators);
@@ -29,7 +26,7 @@ int main() {
 			sum -= numbers;
 		}
 		//sum += numbers;
-	}	
+	}
 	cout << sum;
 	return 0;
 }

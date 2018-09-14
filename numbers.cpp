@@ -3,29 +3,8 @@
 03/01/2018
 lab5
 Is divisible
-5a
-5a
-5a
-5a
-5b
-5b
-5b
-5b
-5c
-5c
-5c
-5c
-5d
-5d
-5d
-5d
-5e
-5e
-5e
-5f
-5f
-5f
 compile with g++ numbers.cpp -o number */
+
 #include <iostream>
 
 using namespace std;
@@ -44,39 +23,39 @@ int test_nextTwinPrime();
 int largestTwinPrime(int j, int l);
 int test_largestTwinPrime();
 
-int main() {     
+int main() {
 	cout << "5A: TESTING IS DIVISIBLE" << endl;
 	bool res = test_isDivisibleBy();
 		if (!res) {cout << "Failed Test" << endl;}
 		else { cout << "Passed Tests" << endl;}
 	cout << endl;
-	
+
 	cout << "5B: TESTING ISPRIME" << endl;
 	bool res2 = test_isPrime();
 	cout << endl;
-	
+
 	cout << "5C: TEST NEXT PRIME" << endl;
 	int res3 = test_nextPrime();
 	cout << endl;
-	
+
 	cout << "5D: TEST COUNT PRIME" << endl;
 	int res4 = test_countPrimes();
 	cout << endl;
-	
+
 	cout << "5E: TEST TWIN PRIME" << endl;
 	int res5 = test_isTwinPrime();
 	cout << endl;
-	
+
 	cout << "5F: TEST NEXT TWIN PRIME" << endl;
 	int res6 = test_nextTwinPrime();
 	cout << endl;
-	
+
 	cout << "5G: TEST LARGEST TWIN PRIME" << endl;
 	int res7 = test_largestTwinPrime();
 	cout << endl;
 	return 0;
-}       
-		 
+}
+
 bool isDivisibleBy(int n, int d){
 	if (d == 0){
 		cout << "Division by ZERO!" << endl;
@@ -107,7 +86,7 @@ bool isPrime(int t){
 	if (t <= 1) {
 		return false;
 	}
-	if (t == 2) { 
+	if (t == 2) {
 		return true;
 	}
 	if (t>2){
@@ -115,10 +94,10 @@ bool isPrime(int t){
 			if ( t % e == 0) {
 				return false;
 			}
-			
+
 		}
 	}
-	return true;     
+	return true;
 }
 
 bool test_isPrime(){
@@ -131,8 +110,8 @@ bool test_isPrime(){
 		else {
 			cout << test_t[i] << " a prime number" << endl;
 			}
-	}   
-}              
+	}
+}
 int nextPrime(int k){
 	for (int j = k + 1; true; j++){
 		if (isPrime(j)) {
@@ -148,7 +127,7 @@ int test_nextPrime(){
 		if (!nextPrime(test_k[i])) {
 			cout << "Not Found!!!" << endl;
 		}
-		else { 
+		else {
 		cout << "Found smallest prime number greater than " << test_k[i] << " is " << nextPrime(test_k[i]) << endl;
 		}
 	}
@@ -174,11 +153,11 @@ int test_countPrimes(){
 			cout << "Test countPrime " << "(" << test_a[i] << "," << test_b[i] << ") expected " << res4[i] << endl;
 		}
 		else if (countPrimes(test_a[i], test_b[i]) == res4[i]) {
-		cout << "Found the numbers of prime numbers " << "(" << test_a[i] << "," 
+		cout << "Found the numbers of prime numbers " << "(" << test_a[i] << ","
 		<< test_b[i] << ") is "  << countPrimes(test_a[i], test_b[i]) << endl;
 		}
 	}
-}	
+}
 
 bool isTwinPrime(int c){
 	int d = c + 2;
@@ -222,7 +201,7 @@ int test_nextTwinPrime(){
 		if (!nextTwinPrime(test_g[i])) {
 			cout << "Not Found!!!" << endl;
 		}
-		else { 
+		else {
 		cout << "Found smallest twin prime number greater than " << test_g[i] << " is " << nextTwinPrime(test_g[i]) << endl;
 		}
 	}
@@ -253,4 +232,4 @@ int test_largestTwinPrime(){
 		cout << "Found the largest twin prime number in range " << test_j[i] << " and " << test_l[i] << " is " << largestTwinPrime(test_j[i], test_l[i]) << endl;
 		}
 	}
-}	
+}

@@ -2,10 +2,6 @@
 CSCI 13500
 Project 1C
 Reading multiple formulas
-Reading multiple formulas
-Reading multiple formulas
-Reading multiple formulas
-Reading multiple formulas
 Date: 02/28/2018 */
 
 
@@ -30,7 +26,7 @@ int main() {
 			sum = 0;
 			sum += numbers;
 		}
-		
+
 	}
 	cout << sum;
 	return 0;

@@ -4,23 +4,6 @@ Course: CSCI-136
 Instructor: Eric Critser
 Assignment: Lab7D
 Task D. Decryption
-Task D. Decryption
-Task D. Decryption
-Task D. Decryption
-Task D. Decryption
-Task D. Decryption
-Task D. Decryption
-Task D. Decryption
-Task D. Decryption
-Task D. Decryption
-Task D. Decryption
-Task D. Decryption
-Task D. Decryption
-Task D. Decryption
-Task D. Decryption
-Task D. Decryption
-Task D. Decryption
-Task D. Decryption
 */
 
 #include <iostream>
@@ -55,7 +38,7 @@ string getInputPT(){
         getline(cin, x);
         return x;
 }
-   
+
 int getInputCS(){
         int u;
         cout << "Enter right shift: ";
@@ -119,10 +102,10 @@ string encryptCaesar(string plaintext, int rshift) {
                 else {
                         oss << plaintext[i];
                 }
-                
+
         }
-        
-        return oss.str();   
+
+        return oss.str();
 }
 
 string decryptCaesar(string op1, int rshift) {
@@ -134,9 +117,9 @@ string decryptCaesar(string op1, int rshift) {
                 else {
                         oss << op1[i];
                 }
-                
+
         }
-        return oss.str();   
+        return oss.str();
 }
 
 char shiftCharVG(char c, char d){
@@ -168,7 +151,7 @@ char reShiftCharVG(char b, char d){
                 else {
                         b = (char) ((int) b - ((int) d - 97));
                 }
-                
+
         }
         if ((int) b >= 97 && (int) b <= 122){
                 if (((int) b - ((int) d - 97))< 97){
@@ -195,7 +178,7 @@ string encryptVigenere(string plaintext, string keyword) {
                         oss << plaintext[i];
                 }
         }
-        return oss.str();   
+        return oss.str();
 }
 
 string decryptVigenere(string output2, string keyword) {
@@ -212,5 +195,5 @@ string decryptVigenere(string output2, string keyword) {
                         oss << output2[i];
                 }
         }
-        return oss.str();   
+        return oss.str();
 }

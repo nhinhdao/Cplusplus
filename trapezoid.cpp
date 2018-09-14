@@ -1,8 +1,5 @@
 /*Nhinh Dao
 CSCI 13600 - Lab4
-***
-***
-***
 compile with G++ trazepoid.cpp -o trapezoid */
 
 #include <iostream>

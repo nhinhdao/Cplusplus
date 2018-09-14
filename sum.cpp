@@ -2,8 +2,6 @@
 CSCI 13500
 Project 1
 Adding Interger
-Adding Interger
-Adding Interger
 Date: 02/28/2018 */
 
 #include <iostream>

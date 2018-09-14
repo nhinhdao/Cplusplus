@@ -2,9 +2,6 @@
 CSCI 13500
 Project 1d
 Squares
-Squares
-Squares
-Squares
 Date: 02/28/2018 */
 
 
@@ -33,7 +30,7 @@ int main() {
 			continue;
 			sum += numbers;
 		}
-		
+
 	}
 	cout << sum;
 	return 0;
